@@ -1,5 +1,5 @@
 import Image from 'next/image';
 
 export default function Home() {
-  return <div>Check Ticket 123123</div>;
+  return <div>Check Ticket Real Test</div>;
 }
