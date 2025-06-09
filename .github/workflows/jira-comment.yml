@@ -15,14 +15,14 @@ jobs:
           JIRA_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
         with:
           script: |
-            const jiraPrefix = 'Y26W2-';
-            const jiraDomain = 'yapp26thweb2.atlassian.net';
-            const jiraBaseUrl = 'https://yapp26thweb2.atlassian.net/jira/software/projects/Y26W2/boards/1/backlog?selectedIssue=';
+            const jiraPrefix = 'CRPM-';
+            const jiraDomain = 'crabit-team.atlassian.net';
+            const jiraBaseUrl = 'https://crabit-team.atlassian.net/jira/software/projects/CRPM/boards/1/backlog?selectedIssue=';
             const pr = context.payload.pull_request;
             const title = pr.title;
 
 
-            const match = title.match(/Y26W2-\d+/);
+            const match = title.match(/CRPM-\d+/);
             if (!match) {
               console.log("PR 제목에서 Jira 티켓 넘버를 찾을 수 없습니다!👀");
               return;
