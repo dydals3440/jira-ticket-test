@@ -16,7 +16,7 @@ jobs:
         with:
           script: |
             const jiraPrefix = 'BTS-';
-            const jiraDomain = 'crabit-team.atlassian.net';
+            const jiraDomain = 'dydals3440-1749465647911.atlassian.net';
             const jiraBaseUrl = 'https://dydals3440-1749465647911.atlassian.net/jira/software/projects/BTS/boards/1/backlog?selectedIssue=';
             const pr = context.payload.pull_request;
             const title = pr.title;
